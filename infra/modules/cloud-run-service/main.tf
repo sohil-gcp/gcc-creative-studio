@@ -116,7 +116,7 @@ resource "google_cloud_run_v2_service" "this" {
     }
     scaling {
       min_instance_count = var.scaling_min_instances
-      max_instance_count = var.scaling_max_instances
+      max_instance_count = 10
     }
   }
 
